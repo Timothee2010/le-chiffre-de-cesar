@@ -12,7 +12,7 @@ chaineCryptee = ""
 ### fonctinnoment ###
 
 for caractereActuel in chaineACrypter:
-  position = alphabet.find(caracterACctuel)
+  position = alphabet.find(caractereACctuel)
   nouvelleposition = position + quantitedecalage
   chaineCryptee = chaineCryptee + alphabet[nouvelleposition]
 print("ton message crypte est", chaineCryptee)
