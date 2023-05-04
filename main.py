@@ -14,7 +14,7 @@ chainecryptee = ""
 for caractereactuel in chaineacrypter:
   position = alphabet.find(caractereactuel)
   nouvelleposition = position + quantitedecalage
-  chainecryptee = chaineacyptee + alphabet[nouvelleposition]
+  chainecryptee = chainecryptee + alphabet[nouvelleposition]
 print("ton message crypte est", chainecryptee)
 
 ### ponctuation ###
