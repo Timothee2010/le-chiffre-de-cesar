@@ -22,7 +22,5 @@ print("ton message crypte est", chainecryptee)
 for caractereactuel in chaineacrypter:
   position = alphabet.find(caractereactuel)
   nouvelleposition = position + quantitedecalage
-  if caractereactuel in alphabet:
-    chainecryptee = chainecryptee + alphabet[nouvelleposition]
-  else:
-    chainecryptee = chainecryptee + caractereactuel
+  chainecryptee = chainecryptee + alphabet[nouvelleposition]
+ 
