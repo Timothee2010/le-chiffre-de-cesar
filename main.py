@@ -4,23 +4,25 @@ alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 ### interface personne ###
 
-chaineacrypter = input("S'il te plait, entre un message a crypter :")
-chaineacrypter = chaineacrypter.upper()
+chaineACrypter = input("S'il te plait, entre un message a crypter :")
+chaineACrypter = chaineACrypter.upper()
 quantitedecalage = int(input("S'il te plait, entre un nombre entier de 1 a 25 en guise de cle."))
-chainecryptee = ""
+chaineCryptee = ""
 
 ### fonctinnoment ###
 
-for caractereactuel in chaineacrypter:
-  position = alphabet.find(caractereactuel)
+for caractereActuel in chaineACrypter:
+  position = alphabet.find(caracterACctuel)
   nouvelleposition = position + quantitedecalage
-  chainecryptee = chainecryptee + alphabet[nouvelleposition]
-print("ton message crypte est", chainecryptee)
+  chaineCryptee = chaineCryptee + alphabet[nouvelleposition]
+print("ton message crypte est", chaineCryptee)
 
 ### ponctuation ###
 
-for caractereactuel in chaineacrypter:
-  position = alphabet.find(caractereactuel)
+for caractereActuel in chaineACrypter:
+  position = alphabet.find(caractereActuel)
   nouvelleposition = position + quantitedecalage
-  chainecryptee = chainecryptee + alphabet[nouvelleposition]
- 
+  if caractereActuel in alphabet:
+    chaineCryptee = chaineCryptee + alphabet[nouvelleposition]
+  else:
+    chaineCryptee = chaineCryptee + caractereActuel
